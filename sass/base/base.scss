@@ -14,8 +14,18 @@ npm run compile:sass
 html {
   // This defines what 1rem is
   font-size: 62.5%;
+
+  @include respond-phone {
+    font-size: 50%;
+  } 
+
+  @include respond(phone) {
+    font-size: 15%;
+  }
+
 }
 
 body {
   box-sizing: border-box;
 }
+
